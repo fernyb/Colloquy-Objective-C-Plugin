@@ -1,0 +1,20 @@
+= Colloquy Objective-C Plugin
+
+A way to get started writing Objective-C Plugin for Colloquy.
+
+== Getting Started
+
+Checkout Colloquy from trunk from:
+    
+    http://source.colloquy.info/svn/trunk
+
+
+Build and Compile the following frameworks first:
+* Acid.framework
+* AGRegex.framework
+* TCMPortMapper.framework
+* ChatCore.framework
+
+After the frameworks are built Open Colloquy.xcodeproj with XCode then select build and compile.
+
+To be continued....
