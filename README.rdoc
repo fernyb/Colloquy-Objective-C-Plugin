@@ -37,4 +37,11 @@ Also set "Framework Search Paths" to the Colloquy project.
 
 If you get errors about ChatCore.framework missing just remove it and re-add.
 
+Once you have the plugin compiled. You can place it or symlink it to
+    
+    ~/Library/Application\ Support/Colloquy/PlugIns
+    
+
+Colloquy will then load all plugins from that directory.
+
 There also might be steps I am missing here...
