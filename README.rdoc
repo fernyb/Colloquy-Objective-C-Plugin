@@ -17,4 +17,4 @@ Build and Compile the following frameworks first:
 
 After the frameworks are built Open Colloquy.xcodeproj with XCode then select build and compile.
 
-To be continued....
+If you have issues trying to build it might be a good idea to set the Base SDK to 10.5
