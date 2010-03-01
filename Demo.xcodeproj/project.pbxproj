@@ -7,25 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F169CEB113C6B1800E81B57 /* Growl.framework in Copoy Frameworks */ = {isa = PBXBuildFile; fileRef = C4F26E151137935E002760E5 /* Growl.framework */; };
+		2F169CED113C6B5700E81B57 /* ChatCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F169CEC113C6B5700E81B57 /* ChatCore.framework */; };
+		2F169CF0113C6B5F00E81B57 /* ChatCore.framework in Copoy Frameworks */ = {isa = PBXBuildFile; fileRef = 2F169CEC113C6B5700E81B57 /* ChatCore.framework */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		C4EB6ABF11342341007FA554 /* DemoPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB6ABE11342341007FA554 /* DemoPlugin.m */; };
-		C4F26CF911378CA7002760E5 /* ChatCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F26CF811378CA7002760E5 /* ChatCore.framework */; };
 		C4F26E161137935E002760E5 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F26E151137935E002760E5 /* Growl.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F169CCF113C695000E81B57 /* Copoy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2F169CF0113C6B5F00E81B57 /* ChatCore.framework in Copoy Frameworks */,
+				2F169CEB113C6B1800E81B57 /* Growl.framework in Copoy Frameworks */,
+			);
+			name = "Copoy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2F169CEC113C6B5700E81B57 /* ChatCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChatCore.framework; path = ../Colloquy/build/Release/ChatCore.framework; sourceTree = SOURCE_ROOT; };
 		32DBCF630370AF2F00C91783 /* Demo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo_Prefix.pch; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* Demo.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Demo.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4EB6ABD11342341007FA554 /* DemoPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoPlugin.h; sourceTree = "<group>"; };
 		C4EB6ABE11342341007FA554 /* DemoPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoPlugin.m; sourceTree = "<group>"; };
-		C4F26CF811378CA7002760E5 /* ChatCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChatCore.framework; path = /Users/fernyb/cocoa/Colloquy/build/Development/ChatCore.framework; sourceTree = "<absolute>"; };
-		C4F26E151137935E002760E5 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = /Users/fernyb/cocoa/Colloquy/Frameworks/Growl.framework; sourceTree = "<absolute>"; };
+		C4F26E151137935E002760E5 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = /Users/fbarajas/cocoa/Colloquy/Frameworks/Growl.framework; sourceTree = "<absolute>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -35,8 +52,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
-				C4F26CF911378CA7002760E5 /* ChatCore.framework in Frameworks */,
 				C4F26E161137935E002760E5 /* Growl.framework in Frameworks */,
+				2F169CED113C6B5700E81B57 /* ChatCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,8 +102,8 @@
 		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F169CEC113C6B5700E81B57 /* ChatCore.framework */,
 				C4F26E151137935E002760E5 /* Growl.framework */,
-				C4F26CF811378CA7002760E5 /* ChatCore.framework */,
 				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -128,6 +145,7 @@
 				8D5B49AF048680CD000E48DA /* Resources */,
 				8D5B49B1048680CD000E48DA /* Sources */,
 				8D5B49B3048680CD000E48DA /* Frameworks */,
+				2F169CCF113C695000E81B57 /* Copoy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,12 +211,13 @@
 		1DEB913B08733D840010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../Colloquy/build/Development\"",
-					"\"$(SRCROOT)/../../Colloquy/Frameworks\"",
+					"$(inherited)/**",
+					"\"$(SRCROOT)/../../Colloquy/build/Release\"/**",
+					"\"$(SRCROOT)/../../Colloquy/Frameworks\"/**",
+					"\"$(SRCROOT)/../Colloquy/build/Release\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -206,6 +225,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Demo_Prefix.pch;
+				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				PRODUCT_NAME = Demo;
@@ -216,12 +236,13 @@
 		1DEB913C08733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../Colloquy/build/Development\"",
-					"\"$(SRCROOT)/../../Colloquy/Frameworks\"",
+					"$(inherited)/**",
+					"\"$(SRCROOT)/../../Colloquy/build/Release\"/**",
+					"\"$(SRCROOT)/../../Colloquy/Frameworks\"/**",
+					"\"$(SRCROOT)/../Colloquy/build/Release\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -237,23 +258,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(HOME)/cocoa/Colloquy/Frameworks",
-					"$(HOME)/Library/Frameworks",
-					"$(SRCROOT)/Frameworks",
-					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/cocoa/Colloquy/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(HOME)/cocoa/Colloquy/Frameworks/**";
-				LIBRARY_SEARCH_PATHS = "$(HOME)/cocoa/Colloquy/Frameworks/**";
+				HEADER_SEARCH_PATHS = "$(HOME)/cocoa/Colloquy/**";
+				LIBRARY_SEARCH_PATHS = "$(HOME)/cocoa/Colloquy/**";
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
-				USER_HEADER_SEARCH_PATHS = "/Users/fernyb/cocoa/Colloquy/**";
+				SDKROOT = macosx10.5;
+				USER_HEADER_SEARCH_PATHS = "$(HOME)/cocoa/Colloquy/**";
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -261,12 +279,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/cocoa/Colloquy/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(HOME)/cocoa/Colloquy/**";
+				LIBRARY_SEARCH_PATHS = "$(HOME)/cocoa/Colloquy/**";
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
-				USER_HEADER_SEARCH_PATHS = "/Users/fernyb/cocoa/Colloquy/**";
+				SDKROOT = macosx10.5;
+				USER_HEADER_SEARCH_PATHS = "$(HOME)/cocoa/Colloquy/**";
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};

@@ -2,12 +2,18 @@
 
 A way to get started writing Objective-C Plugin for Colloquy.
 
+Current functionality of the plugin just sends a growl notification when a message
+is sent from any of the channels.
+
 == Getting Started
 
-Checkout Colloquy from trunk from:
+Checkout Colloquy from trunk to ~/cocoa/Colloquy
     
     http://source.colloquy.info/svn/trunk
 
+   svn co http://source.colloquy.info/svn/trunk ~/cocoa/Colloquy
+
+You might need to make ~/cocoa if it does not exists.
 
 Build and Compile the following frameworks first:
 * Acid.framework
@@ -17,4 +23,18 @@ Build and Compile the following frameworks first:
 
 After the frameworks are built Open Colloquy.xcodeproj with XCode then select build and compile.
 
-If you have issues trying to build it might be a good idea to set the Base SDK to 10.5
+* If you have issues trying to build it might be a good idea to set the Base SDK to 10.5
+
+Once you have the Colloquy and its frameworks built you can open the Colloquy Objective-C Plugin XCode project
+
+You may need to go into: 
+    
+    Project > Edit Project Settings
+
+and set "Header Search Paths" to the path of the Colloquy project you built.
+Also make sure to check "Always Search User Paths"
+Also set "Framework Search Paths" to the Colloquy project.
+
+If you get errors about ChatCore.framework missing just remove it and re-add.
+
+There also might be steps I am missing here...

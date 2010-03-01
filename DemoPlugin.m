@@ -52,7 +52,8 @@
   // then a new growl window will be displayed for the messages
   //
   //NSString * notificationIdentifier = @"GrowlPluginIdentifier";
-  NSDate * date = [[NSDate date] dateByAddingTimeInterval:3600];
+  NSTimeInterval date = [[NSDate date] timeIntervalSince1970];
+  
   NSString * notificationIdentifier = [NSString stringWithFormat:@"GrowlPluginIndentifier-%d", date];
   
   NSImage * icon = [[NSApplication sharedApplication] applicationIconImage];  
